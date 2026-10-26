@@ -25,9 +25,11 @@ public class TestStatApp {
         System.out.println("The average test score is " + average);
 
 
-        //*Finding the high score
+        //*Finding the high  test score
+        //?Setting max to the lowest possible value
         int max = Integer.MIN_VALUE;
 
+        //?Looping through all the numbers in the list till highest number is found
         for (int highScore : testScores) {
            if (highScore > max) {
                max = highScore;
@@ -36,6 +38,23 @@ public class TestStatApp {
 
         }
         System.out.println("The highest score on the test is " + max);
+
+        //*Finding the lowest test score
+        //? Setting min to the highest possible value
+        int min = Integer.MAX_VALUE;
+
+        //?Looping through all the numbers in the list till lowest number found
+        for (int lowestScore : testScores) {
+            if (lowestScore < min) {
+                min = lowestScore;
+            }
+
+
+        }
+        System.out.println("The lowest score on the test is " + min);
+
+
+
 
     }
 
